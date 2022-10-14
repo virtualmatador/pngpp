@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+enable_testing()
+get_filename_component(the_library "${CMAKE_CURRENT_SOURE_DIR}" ABSOLUTE)
+get_filename_component(the_library "${the_library}" NAME_WE)
+add_subdirectory("src")
+add_subdirectory("test")
